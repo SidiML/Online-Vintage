@@ -1,33 +1,45 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import { Routes, Route } from "react-router-dom";
+
+import "bootstrap/dist/css/bootstrap.min.css"
+// import Button from 'react-bootstrap/Button'
+// import {Button} from 'react-bootstrap'
+
+//* Pages
 import './App.css'
+import AppHeader from './components/AppHeader'
+import AppFooter from './components/AppFooter'
+import Accueil from "./containers/Accueil"
+import Inscription from "./containers/Inscription"
+import Connexion from "./containers/Connexion"
+import Profil from "./containers/Profil"
+import Categorie from "./containers/Categorie"
+import Produits from "./containers/Produits"
+import Details from "./containers/Details"
+import Panier from "./containers/Panier"
+import Payement from "./containers/Payement"
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+    <>
+      <AppHeader />
+      <Routes>
+          <Route path="/Accueil" element={<Accueil />} />
+          <Route path="/Inscription" element={<Inscription />} />
+          <Route path="/Connexion" element={<Connexion />} />
+          <Route path="/Profil" element={<Profil />} />
+          <Route path="/Categorie" element={<Categorie />} />
+          <Route path="/Categorie/Produits" element={<Produits />} />
+          {/* <Route path="/Categorie/:id/Produits" element={<Produits />} /> */}
+          {/* <Route path="/Produits" element={<Produit />} /> */}
+          <Route path="/Details" element={<Details />} />
+          <Route path="/Panier" element={<Panier />} />
+          <Route path="/Payement" element={<Payement />} />
+      </Routes>
+      <AppFooter/>
+    </>
   )
 }
 
