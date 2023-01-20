@@ -1,5 +1,8 @@
 import React from 'react'
 
+//* pages
+import "./AppHeader.css"
+
 const AppHeader = () => {
   return (
     <header>
