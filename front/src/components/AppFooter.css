@@ -7,8 +7,8 @@ footer{
 
 footer section{
     /* display: block; */
-    /* border: 1px solid red; */
     margin: 4%;
+    /* border: 1px solid red; */
     width: 500px; height: 150px;
 
 } footer section:nth-child(1), footer section:nth-child(2){
@@ -16,10 +16,6 @@ footer section{
 
 } footer section:last-child{
     display: block;
-}
-
-footer div{
-    /* display: inline-block; */
 }
 
 footer .AppLogo{

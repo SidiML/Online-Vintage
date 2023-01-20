@@ -15,12 +15,9 @@ header section{
 } header section:nth-child(1), header section:nth-child(2){
     margin-right: 25%;
 } header section:last-child{
-    /* position: absolute;
-    right: 5px;
-    top: 15px; */
     text-transform: uppercase;
 }
 
-.AppLogo{
+header .AppLogo{
     margin-left: 20%;
 }

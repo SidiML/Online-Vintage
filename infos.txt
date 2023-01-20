@@ -1,4 +1,7 @@
-techno exiger : SQL / ExpressJS / ReactJS
+[Trello]
+- https://trello.com/b/FoYpHJGf/e-commerce-matrice
+
+Techno exiger : SQL / ExpressJS / ReactJS
 [Pour la boutique (castorama / decatlon ) :]
         - Un panier avec la possibilité de rajouter un/ plusieurs objet.s / modifier un objet / le retire du panier
         - Un système de catégorie / catalogue via le thème choisi par le groupe
@@ -17,13 +20,19 @@ techno exiger : SQL / ExpressJS / ReactJS
         - Un système de messagerie en one to one / one to many / many to many via un autre utilisateur 
         - Dark mode
 
-[Trello]
-- https://trello.com/b/FoYpHJGf/e-commerce-matrice
-
 [Commands]
 npm install bootstrap react-bootstrap
 
-[Imports/Exports]
+[PROCESS GIT]
+À la racine du projet
+git status
+git add .
+git status
+git commit -m "Blabla"
+git pull
+git push
+
+[Bootstrap Components]
 export 'default' (imported as 'Button') was not found in 'react-bootstrap' (possible exports:
 Accordion, AccordionButton, AccordionCollapse, AccordionContext, Alert, Anchor, Badge,
 Breadcrumb, BreadcrumbItem, Button, ButtonGroup, ButtonToolbar,
@@ -42,3 +51,6 @@ SSRProvider, Spinner, SplitButton, Stack,
 Tab, TabContainer, TabContent, TabPane, Table, Tabs, ThemeProvider, Toast, ToastBody, ToastContainer, ToastHeader, ToggleButton, ToggleButtonGroup, Tooltip,
 useAccordionButton)
 
+[Commands Dangereurses]
+git rm -r node_modules
+ - Supprime le dossier <node_modules> de façon récursive à la fois sur Github et en local
