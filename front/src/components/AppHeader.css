@@ -1,7 +1,7 @@
 header{
     display: flex;
     margin: 0%; padding: 1%;
-    background-color: brown; color: white;
+    background-color: brown;
     width: 100%; height: 15%;
 }
 
@@ -20,4 +20,9 @@ header section{
 
 header .AppLogo{
     margin-left: 20%;
+}
+
+header a{
+    color: black;
+    text-decoration: none;
 }

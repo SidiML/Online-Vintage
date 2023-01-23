@@ -16,7 +16,8 @@ const AppHeader = () => {
                 
             </section>
             <section>
-                <div className=''>
+                <div>
+                    <a href='/'><b>Toumaï.com</b></a> 
                     {/* { user && <h2>Bonjour {user.nom}</h2>} */}
                 </div>
             </section>
